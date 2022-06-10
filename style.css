@@ -50,6 +50,10 @@ ul {
     font-size: 30px;
 }
 
+ul.show {
+    display: flex;
+}
+
 li {
     text-decoration: none;
     /* width: 200px; */
@@ -158,7 +162,47 @@ hr {
     margin-right: 20px;
 }
  
-.contacts {
+.contacts-top{
+    font-size: 70px;
+    font-weight: 400;
     color: white;
     text-align: left;
+}
+
+.contacts-middle {
+    color: white;
+    text-align: left;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline:0;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-items: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color:rgb(56, 55, 55);
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+       flex-direction: column-reverse;
+       background-color:rgb(56, 55, 55);
+    }
 }
