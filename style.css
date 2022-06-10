@@ -33,8 +33,10 @@ a {
 }
 
 footer {
-    height: 400px;
+    height: 500px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
@@ -186,6 +188,23 @@ hr {
     outline:0;
 }
 
+.CV {
+    margin: 80px;
+    align-items: center;
+}
+
+.cv-screenshot {
+    width: 300px;
+    height: 350px;
+    box-shadow: 5px 5px 20px rgb(48, 48, 48);
+    margin: 10px;
+}
+
+.cv-image {
+    
+    width:300px;
+    height: 350px;
+}
 
 @media only screen and (max-width:1000px) {
     .hamburger {
