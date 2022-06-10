@@ -11,6 +11,10 @@ a {
     color: white;
 }
 
+img{
+    max-width: 100%;
+}
+
 .Beginning {
     background-color: rgb(37, 36, 36);
     height: 100vh;
@@ -33,7 +37,7 @@ a {
 }
 
 footer {
-    height: 450px;
+    height: 27rem;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -62,7 +66,7 @@ li {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -116,7 +120,7 @@ p {
 }
 
 .headshot {
-    width:300px;
+    width:45rem;
     border-radius: 50%;
 }
 .headshot-container {
@@ -125,6 +129,9 @@ p {
     text-align: center;
 }
 
+.container{
+    max-width: 90rem;
+}
 @media only screen and (max-width:1000px) {
     .Project-display {
         display: flex;
@@ -226,5 +233,43 @@ hr {
         display: flex;
        flex-direction: column-reverse;
        background-color:rgb(56, 55, 55);
+    }
+}
+@media only screen and (max-width:500px) {
+    .container {
+        max-width: 35rem;
+    }
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-items: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color:rgb(56, 55, 55);
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+       flex-direction: column-reverse;
+       background-color:rgb(56, 55, 55);
+    }
+
+    footer {
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Middle {
+        flex-direction: column;
     }
 }
