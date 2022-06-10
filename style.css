@@ -45,7 +45,7 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    width: 800px;
+    width: 75vw;
     justify-content: space-around;
     font-size: 30px;
 }
@@ -127,6 +127,10 @@ p {
     .Project-display {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .Middle {
+        padding: 10px;
     }
 }
 
